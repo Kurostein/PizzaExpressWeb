@@ -7,5 +7,5 @@
 
   HomeController.$inject = ['$scope'];
 
-  angular.module('user.module').controller('HomeController', HomeController);
+  angular.module('home.module').controller('HomeController', HomeController);
 })();

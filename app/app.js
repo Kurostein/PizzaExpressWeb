@@ -3,7 +3,7 @@
 
   angular.module('PizzaExpressApp', 
   [
-    'app.module',
-    'app.3rdParty'
+    'app.3rdParty',
+    'app.module'
   ]);
 })();
