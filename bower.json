@@ -1,0 +1,27 @@
+{
+  "name": "pizza-express-web",
+  "description": "A simple pizza order system.",
+  "main": "app.js",
+  "authors": [
+    "Rastelli"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "semantic-ui",
+    "angular-ui-router"
+  ],
+  "homepage": "https://github.com/Kurostein/PizzaExpressWeb",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "semantic": "semantic-ui#^2.2.4"
+  }
+}

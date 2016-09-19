@@ -1,0 +1,33 @@
+{
+  "name": "pizza-express-web",
+  "version": "1.0.0",
+  "description": "A simple pizza order system.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kurostein/PizzaExpressWeb.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "semantic-ui",
+    "angular-ui-router"
+  ],
+  "author": "Rastelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kurostein/PizzaExpressWeb/issues"
+  },
+  "homepage": "https://github.com/Kurostein/PizzaExpressWeb#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^1.0.0-beta.2"
+  }
+}
