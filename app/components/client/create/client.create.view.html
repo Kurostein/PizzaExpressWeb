@@ -16,48 +16,48 @@
             <div class="two fields">
               <div class="required field">
                 <label>Nome</label>
-                <input type="text" name="nome">
+                <input type="text" name="name" ng-model="vm.client.name">
               </div>
               <div class="required field">
                 <label>Sobrenome</label>
-                <input type="text" name="sobrenome">
+                <input type="text" name="lastname" ng-model="vm.client.lastname">
               </div>
             </div>
             <div class="two fields">
               <div class="required field">
                 <label>CPF</label>
-                <input type="text" name="cpf">
+                <input type="text" name="cpf" ng-model="vm.client.cpf">
               </div>
               <div class="required field">
                 <label>Telefone</label>
-                <input type="text" name="telefone">
+                <input type="text" name="phone" ng-model="vm.client.phone">
               </div>
             </div>
             <h3 class="ui dividing header">Conta</h3>
             <div class="two fields">
               <div class="required field">
                 <label>Usuário</label>
-                <input type="text" name="usuario">
+                <input type="text" name="username" ng-model="vm.client.username">
               </div>
               <div class="required field">
                 <label>Senha</label>
-                <input type="text" name="senha">
+                <input type="text" name="password" ng-model="vm.client.password">
               </div>
             </div>
             <h3 class="ui dividing header">Endereço</h3>
             <div class="three fields">
               <div class="required eight wide field">
                 <label>Logradouro</label>
-                <input type="text" name="logradouro">
+                <input type="text" name="street" ng-model="vm.client.street">
               </div>
               <div class="required three wide field">
                 <label>Número</label>
-                <input type="text" name="numero">
+                <input type="text" name="number" ng-model="vm.client.number">
               </div>
               <div class="required five wide field">
                 <label>CEP</label>
                 <div class="ui icon input">
-                  <input type="text" name="cep">
+                  <input type="text" name="cep" ng-model="vm.client.cep">
                   <i class="inverted circular search link icon"></i>
                 </div>
               </div>
@@ -65,15 +65,15 @@
             <div class="three fields">
               <div class="required field">
                 <label>Bairro</label>
-                <input type="text" name="bairro">
+                <input type="text" name="district" ng-model="vm.client.district">
               </div>
               <div class="required field">
                 <label>Cidade</label>
-                <input type="text" name="cidade">
+                <input type="text" name="city" ng-model="vm.client.city">
               </div>
               <div class="required field">
                 <label>UF</label>
-                <input type="text" name="uf">
+                <input type="text" name="uf" ng-model="vm.client.uf">
               </div>          
             </div>
           </form>

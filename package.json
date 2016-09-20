@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Kurostein/PizzaExpressWeb#readme",
   "devDependencies": {
     "bower": "^1.7.9",
+    "feathers": "^2.0.2",
     "gulp": "^3.9.1"
   },
   "dependencies": {
