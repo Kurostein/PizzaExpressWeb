@@ -16,7 +16,7 @@
             <div class="two fields">
               <div class="required field">
                 <label>Nome</label>
-                <input type="text" name="name">
+                <input type="text" name="nome">
               </div>
               <div class="required field">
                 <label>Sobrenome</label>
@@ -82,8 +82,12 @@
       <div class="ui segment">
         <div class="ui buttons right floated">
           <div class="cleasing">
-            <button class="ui positive button"><i class="save icon"></i>Cadastrar</button>
-            <button class="ui button"><i class="cancel icon"></i>Cancelar</button>
+            <button class="ui positive button" ng-click="vm.submit();">
+              <i class="save icon"></i>
+              Cadastrar</button>
+            <button class="ui button" ng-click="vm.cancel();">
+              <i class="cancel icon"></i>
+              Cancelar</button>
           </div>
         </div>
         <br><br>
