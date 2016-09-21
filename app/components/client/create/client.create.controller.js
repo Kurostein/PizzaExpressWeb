@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  const ClientCreateController = function($scope, $state){
+  const ClientCreateController = function($scope, $state, httpMethodService){
     var vm = this;
 
     vm.client = {
@@ -9,25 +9,28 @@
       lastname: '',
       cpf: '',
       phone: '',
-      address: {
-        street: '',
-        number: '',
-        cep: '',
-        district: '',
-        city: '',
-        state: ''
-      },
-      user: { 
-        username: '', 
-        password: '' 
-      }
+      street: '',
+      number: '',
+      cep: '',
+      district: '',
+      city: '',
+      state: ''
     };
 
     vm.submit = Submit;
     vm.cancel = Cancel;
 
     function Submit(){
-
+      httpMethodService.save('clients', vm.client)
+        .then(function(data){
+            console.log(data);
+          })
+          .catch(function(data){
+            console.log(data);
+            return;
+          });
+          
+      $state.go('home');
     }
 
     function Cancel(){
@@ -36,7 +39,7 @@
     }
   };
 
-  ClientCreateController.$inject = ['$scope', '$state'];
+  ClientCreateController.$inject = ['$scope', '$state', 'httpMethodService'];
 
   angular.module('client.module').controller('ClientCreateController', ClientCreateController);
 })();

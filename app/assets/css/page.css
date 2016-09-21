@@ -1,6 +1,10 @@
 body {
   padding: 0;
   margin: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(aliceblue), to(darkcyan));
+  background-image: -webkit-linear-gradient(top, aliceblue, darkcyan);
+  background-image: -moz-linear-gradient(top, aliceblue, darkcyan);
+  background-image: linear-gradient(to bottom, aliceblue, darkcyan);
 }
 
 ui-view{

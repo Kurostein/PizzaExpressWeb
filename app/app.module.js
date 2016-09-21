@@ -4,6 +4,8 @@
   angular.module('app.module', 
   [
     'home.module',
-    'client.module'
+    'client.module',
+    'user.module',
+    'login.module'
   ]);
 })();

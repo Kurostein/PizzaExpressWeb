@@ -1,0 +1,41 @@
+<header>
+  <ng-include src="'app/shared/menu/menu.view.html'"></ng-include>
+</div>
+<section>
+  <div class="ui padded basic text segment container">
+    <h1 class="ui centered dividing header">Pizza Express</h1>
+    <div class="ui very padded segments">
+
+      <div class="ui inverted blue segment">
+        <h2 class="ui header">Cadastro de Usuário</h2>
+      </div>
+
+      <div class="ui segment">
+        <form class="ui form">
+          <div class="required field">
+            <label>Usuário</label>
+            <input type="text" name="username" ng-model="vm.user.username">
+          </div>
+          <div class="required field">
+            <label>Senha</label>
+            <input type="text" name="password" ng-model="vm.user.password">
+          </div>
+        </form>
+      </div>
+
+      <div class="ui segment">
+        <div class="ui buttons right floated">
+          <div class="cleasing">
+            <button class="ui positive button" ng-click="vm.submit();">
+              <i class="save icon"></i>
+              Cadastrar</button>
+            <button class="ui button" ng-click="vm.cancel();">
+              <i class="cancel icon"></i>
+              Cancelar</button>
+          </div>
+        </div>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</section>
