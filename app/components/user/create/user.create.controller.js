@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  const ClientCreateController = function($scope, $state, httpMethodService){
+  const UserCreateController = function($scope, $state, httpMethodService){
     var vm = this;
 
     vm.user = {
@@ -40,7 +40,7 @@
     }
   };
 
-  ClientCreateController.$inject = ['$scope', '$state', 'httpMethodService'];
+  UserCreateController.$inject = ['$scope', '$state', 'httpMethodService'];
 
-  angular.module('user.module').controller('UserCreateController', ClientCreateController);
+  angular.module('user.module').controller('UserCreateController', UserCreateController);
 })();

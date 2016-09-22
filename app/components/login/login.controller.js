@@ -12,11 +12,11 @@
     function Submit(){
       window.app.service('users')
         .find({
-          query: vm.user
+          query: { username: vm.user.username, password: vm.user.password }
         }).then(function(result){
-          if(result.data.length > 0){
+          if(result.length > 0){
             window.isLogged = true;
-            window.userLogged = result.data[0];
+            window.userLogged = result[0];
             $scope.$emit('Logged', true);
             $state.go('home');
             alert('Usuário logado com sucesso!');
