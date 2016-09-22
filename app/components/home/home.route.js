@@ -4,7 +4,7 @@
   const Config = function($stateProvider){
     var homeState = {
       name: 'home',
-      url: '/home',
+      url: '/',
       templateUrl: './app/components/home/home.view.html',
       controller: 'HomeController',
       controllerAs: 'vm'

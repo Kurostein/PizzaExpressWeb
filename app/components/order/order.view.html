@@ -1,0 +1,73 @@
+<header>
+  <ng-include src="'app/shared/menu/menu.view.html'"></ng-include>
+</div>
+<section>
+  <div class="ui padded basic text segment container">
+    <h1 class="ui centered dividing header">Pizza Express</h1>
+    <div class="ui very padded segments">
+
+      <div class="ui inverted blue segment">
+        <h2 class="ui header">Pedido</h2>
+      </div>
+
+      <div class="ui segment">
+        <form class="ui form">
+            <h3 class="ui dividing header">Dados do Usuário</h3>
+            <div class="required field">
+              <label>Nome</label>
+              <input type="text" name="name" ng-model="vm.order.name">
+            </div>
+            <div class="two fields">
+              <div class="required field">
+                <label>CPF</label>
+                <input type="text" name="cpf" ng-model="vm.order.cpf">
+              </div>
+              <div class="required field">
+                <label>Telefone</label>
+                <input type="text" name="phone" ng-model="vm.order.phone">
+              </div>
+            </div>
+            <div class="required field">
+              <label>Endereço</label>
+              <input type="text" name="address" ng-model="vm.order.address">
+            </div>
+            <div class="two fields">
+              <div class="required field">
+                <label>Bairro</label>
+                <input type="text" name="district" ng-model="vm.order.district">
+              </div>
+              <div class="required field">
+                <label>Complemento</label>
+                <input type="text" name="complement" ng-model="vm.order.complement">
+              </div>
+            </div>
+            <h3 class="ui dividing header">Produto</h3>
+            <div class="two fields">
+              <div class="required field">
+                <label>Produto</label>
+                <input type="text" name="product" ng-model="vm.order.product">
+              </div>
+              <div class="required field">
+                <label>Preço</label>
+                <input type="text" name="price" ng-model="vm.order.price">
+              </div>          
+            </div>
+          </form>
+      </div>
+
+      <div class="ui segment">
+        <div class="ui buttons right floated">
+          <div class="cleasing">
+            <button class="ui positive button" ng-click="vm.submit();">
+              <i class="save icon"></i>
+              Cadastrar</button>
+            <button class="ui button" ng-click="vm.cancel();">
+              <i class="cancel icon"></i>
+              Cancelar</button>
+          </div>
+        </div>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</section>

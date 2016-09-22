@@ -4,7 +4,7 @@
   const Config = function($urlRouterProvider, $locationProvider){
     $locationProvider.html5Mode(true);
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
   };
 
   Config.$inject = ['$urlRouterProvider', '$locationProvider']

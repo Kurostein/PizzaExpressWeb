@@ -13,12 +13,28 @@
       <div class="ui segment">
         <form class="ui form">
           <div class="required field">
-            <label>Usuário</label>
-            <input type="text" name="username" ng-model="vm.user.username">
+            <label>Nome</label>
+            <input type="text" name="name" ng-model="vm.user.name">
           </div>
-          <div class="required field">
-            <label>Senha</label>
-            <input type="text" name="password" ng-model="vm.user.password">
+          <div class="ui two fields"> 
+            <div class="required field">
+              <label>CPF</label>
+              <input type="text" name="cpf" ng-model="vm.user.cpf">
+            </div>
+            <div class="required field">
+              <label>Telefone</label>
+              <input type="text" name="phone" ng-model="vm.user.phone">
+            </div>
+          </div>
+          <div class="ui two fields">
+            <div class="required field">
+              <label>Usuário</label>
+              <input type="text" name="username" ng-model="vm.user.username">
+            </div>
+            <div class="required field">
+              <label>Senha</label>
+              <input type="text" name="password" ng-model="vm.user.password">
+            </div>
           </div>
         </form>
       </div>

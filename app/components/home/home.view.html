@@ -7,8 +7,9 @@
     <h1 class="ui centered dividing header">Pizza Express</h1>
     <div class="ui segment">
       <div class="ui stackable three column grid">        
-        <div class="column" ng-repeat="card in vm.cards">
-          <sui-link-card item="card"></sui-link-card>
+        <div class="column" ng-repeat="product in vm.products">
+          <sui-link-card header="product.description" img="product.img" img-alt="product.description" 
+          ribbon-label="product.price" ng-click="vm.order(product);"></sui-link-card>
         </div>
       </div>
     </div>

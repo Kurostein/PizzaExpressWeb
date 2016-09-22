@@ -4,7 +4,7 @@
   angular.module('app.module', 
   [
     'home.module',
-    'client.module',
+    'order.module',
     'user.module',
     'login.module'
   ]);

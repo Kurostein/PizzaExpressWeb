@@ -6,7 +6,10 @@
 
     vm.user = {
       username: '', 
-      password: ''
+      password: '',
+      name: '',
+      cpf: '',
+      phone: ''
     };
 
     vm.submit = Submit;

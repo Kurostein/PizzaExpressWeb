@@ -1,10 +1,18 @@
+html {
+    height: 100%;
+}
+
 body {
   padding: 0;
-  margin: 0;
+  margin: 0;  
+  height: 100%;  
+  background: darkcyan;
   background-image: -webkit-gradient(linear, left top, left bottom, from(aliceblue), to(darkcyan));
   background-image: -webkit-linear-gradient(top, aliceblue, darkcyan);
   background-image: -moz-linear-gradient(top, aliceblue, darkcyan);
   background-image: linear-gradient(to bottom, aliceblue, darkcyan);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ui-view{

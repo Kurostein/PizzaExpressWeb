@@ -5,7 +5,10 @@
     return {
       restrict: 'E',
       scope: {
-        item: '=item'
+        header: '=header',
+        img: '=img',
+        imgAlt: '=imgAlt',
+        ribbonLabel: '=ribbonLabel'
       },
       templateUrl: './app/shared/linkCard/link.card.view.html'
     };
