@@ -1,9 +1,10 @@
-<div class="ui inverted menu">
+<div class="ui inverted menu" ng-controller="MenuController as vm">
   <div class="ui container">
     <a class="item" ui-sref="home"><i class="home icon"></i>Home</a>
     <div class="right menu">
-      <a class="item" ui-sref="login"><i class="user icon"></i>Login</a>
-      <a class="item" ui-sref="user/create">Cadastrar-se</a>
+      <a class="item" ng-if="vm.isLogged" ng-click="vm.logout();"><i class="user icon"></i>Logout</a>
+      <a class="item" ui-sref="login" ng-if="!vm.isLogged"><i class="user icon"></i>Login</a>
+      <a class="item" ui-sref="user/create" ng-if="!vm.isLogged">Cadastrar-se</a>
     </div>
   </div>
 </div>

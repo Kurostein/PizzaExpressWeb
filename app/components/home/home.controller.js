@@ -4,6 +4,7 @@
   const HomeController = function($scope, $state){
     var vm = this;
     vm.order = Order;
+    vm.isLogged = window.isLogged;
 
     vm.products = [
       {
